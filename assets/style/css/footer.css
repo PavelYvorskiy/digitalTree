@@ -8,7 +8,7 @@
 }
 
 .container-footer {
-  max-width: 1420px;
+  max-width: 1480px;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -39,6 +39,7 @@
 .footer-links h4 {
   color: var(--bs-gray-900);
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .footer-links-content {
@@ -71,6 +72,7 @@
 .footer-description h4 {
   color: var(--bs-gray-900);
   margin-bottom: 10px;
+  font-weight: 400;
 }
 .footer-description p {
   font-weight: 300;

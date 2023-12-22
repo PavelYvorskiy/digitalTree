@@ -78,7 +78,7 @@
   top: 0;
   width: 60%;
   height: 100vh;
-  background: var(--main-bg-dark);
+  background: var(--color-white);
   transform: translateX(110%);
   transition: all 2s;
 }
@@ -163,15 +163,6 @@
   .navbar-mob {
     display: block;
   }
-}
-main {
-  width: 100%;
-  height: auto;
-}
-
-.section {
-  width: 100%;
-  height: 100vh;
 }
 
 /*# sourceMappingURL=header.css.map */

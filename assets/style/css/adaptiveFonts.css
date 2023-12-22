@@ -11,12 +11,12 @@
 
 @media (max-width: 767px) {
   h2 {
-    font-size: calc(24px + 40.8 * (100vw - 320px) / 1920);
+    font-size: calc(20px + 30.6 * (100vw - 320px) / 1920);
   }
 }
 @media (min-width: 767px) {
   h2 {
-    font-size: calc(24px + 24 * 100vw / 1920);
+    font-size: calc(20px + 18 * 100vw / 1920);
   }
 }
 
