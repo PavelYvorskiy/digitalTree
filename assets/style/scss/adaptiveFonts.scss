@@ -18,10 +18,10 @@ h1{
     @include adaptive-font(38, 20 )
   }
   h3{
-    @include adaptive-font(24,16 )
+    @include adaptive-font(20,14 )
   }
   h4{
-    @include adaptive-font(28,14 )
+    @include adaptive-font(16,12 )
   }
   h5{
     @include adaptive-font(18,14 )

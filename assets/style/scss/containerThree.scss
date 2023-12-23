@@ -1,0 +1,126 @@
+.containerThree{
+    max-width: 1480px;
+    width: 100%;
+}
+.contentThree{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:40px 20px;
+    &__title{
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            padding: 20px 0;
+            line-height: 1.2;
+            color: var(--bs-gray-dark);
+            font-weight: 400;
+        }
+        p{
+            line-height: 1.5;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: var(--bs-gray-900);
+        }
+    }
+}
+.contentThreeBox{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 30px;
+}
+.serviseCard{
+    width: 460px;
+    min-height: 480px;
+    box-shadow: 0 0 4px 0 #8080803f;
+    background-color: #f7f7f8;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    &__img{
+         padding: 20px;
+
+        img{
+            width: 100%;
+            height: 100;
+            object-fit: contain;
+        }
+    }
+    &:hover{
+        .serviseCardDesc{
+            background-color: #ffffffc7;
+        }
+        
+        .serviseCardDescContent{
+            transform: translateY(-10%);
+            transition: transform 1s;
+            p{
+                display: block;
+            }
+        }
+    }
+}
+.serviseCardDesc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+.serviseCardDescContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    padding: 20px;
+    transform: translateY(0);
+    h3{
+        color: var(--light-green);
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+    h4{
+        padding: 10px 0;
+        font-weight: 400;
+        color: var(--bs-gray-600);
+        span{
+            font-weight: 400;
+            color: var(--bs-gray-600);
+        }
+    }
+    P{
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+        color: var(--bs-gray-900);
+        display: none;
+    }
+}
+@media(max-width:560px){
+    .serviseCard{
+        width: auto;
+    }
+    .serviseCardDescContent{
+        P{
+            display: block;
+        }
+    }
+}
+@media(max-width:430px){
+    .serviseCard{
+        min-height: 400px;
+    }
+}
