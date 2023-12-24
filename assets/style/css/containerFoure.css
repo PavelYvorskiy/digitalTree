@@ -1,0 +1,124 @@
+.containerFoure {
+  max-width: 1480px;
+  width: 100%;
+}
+
+.contentFoure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.contentFoure__title {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contentFoure__title h2 {
+  padding: 20px 0;
+  line-height: 1.2;
+  color: var(--bs-gray-dark);
+  font-weight: 400;
+}
+.contentFoure__title p {
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: var(--bs-gray-900);
+}
+
+.contentFoureBox {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.tabs-nav-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tabs-nav-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.tabs-nav-btn span {
+  letter-spacing: 1.2px;
+}
+.tabs-nav-btn.active span {
+  color: var(--light-green);
+  transition: all 0.5s;
+}
+
+.tabs-content {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+
+.tabs-content-items {
+  flex-shrink: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabs-content-items:nth-child(2) {
+  transform: translateX(-100%);
+}
+.tabs-content-items:nth-child(3) {
+  transform: translateX(-200%);
+}
+.tabs-content-items:nth-child(4) {
+  transform: translateX(-300%);
+}
+.tabs-content-items.active {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tabs-content-items-box {
+  max-width: 700px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tabs-content-items-box_item {
+  padding: 30px;
+}
+.tabs-content-items-box_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .containerFoure {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=containerFoure.css.map */

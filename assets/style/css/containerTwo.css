@@ -12,6 +12,7 @@
 }
 
 .contentTwoBaner {
+  max-width: 600px;
   width: 50%;
   display: flex;
   align-items: center;
@@ -47,11 +48,13 @@
   line-height: 1.4;
   letter-spacing: 1.2px;
   color: var(--bs-gray-900);
+  padding: 10px 0;
 }
 
 @media (max-width: 820px) {
   .contentTwo {
     flex-direction: column;
+    padding: 20px;
   }
   .contentTwoBaner {
     max-width: 700px;
