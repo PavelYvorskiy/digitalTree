@@ -1,0 +1,107 @@
+.containerSeven{
+    max-width: 1480px;
+    width: 100%;
+}
+.contentSeven{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:40px 20px;
+}
+.contentSevenBaner{
+    max-width: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.contentSevenDescription{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 20px;
+    h2,h3{
+        max-width: 600px;
+        padding: 20px 0;
+        line-height: 1.2;
+        color: var(--bs-gray-dark);
+        font-weight: 400;
+    }
+    span{
+        color: var(--light-green);
+        font-weight: bold;
+    }
+    p{
+        max-width: 600px;
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+        color: var(--bs-gray-900);
+        padding: 10px 0;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            span{
+                color: var(--bs-gray-900);
+                font-weight: 400;
+                font-size: 12px;
+                text-align: center;
+                text-transform: lowercase;
+                line-height: 1.2;
+
+            }
+            img{
+                max-width: 80px;
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+@media(max-width:920px){
+    .contentSeven{
+        flex-direction: column;
+        padding: 20px 20px 0;
+    }
+    .contentSevenDescription{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .contentSevenBaner{
+        width: 100%;
+    }
+}
+@media(max-width:520px){
+    .contentSevenDescription{
+       ul{
+        grid-template-columns: repeat(3,1fr);
+       }
+    }
+}
+@media(max-width:420px){
+    .contentSevenDescription{
+       ul{
+        grid-template-columns: repeat(2,1fr);
+       }
+    }
+}

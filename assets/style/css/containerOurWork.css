@@ -65,6 +65,7 @@
 .contentOurWorkBoxItem__imgBox {
   max-width: 300px;
   width: 100%;
+  margin-top: 20px;
 }
 .contentOurWorkBoxItem__imgBox img {
   width: 100%;

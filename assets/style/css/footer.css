@@ -18,6 +18,8 @@
 
 .footer-content {
   max-width: 33%;
+  display: flex;
+  flex-direction: column;
 }
 
 .desc {
@@ -27,6 +29,30 @@
 .desc p {
   font-weight: 300;
   line-height: 1.3;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.contacts__item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contacts__item_tel::before {
+  content: url(../../img/footer/phone.svg);
+  margin-right: 5px;
+}
+.contacts__item_mail::before {
+  content: url(../../img/footer/mail.svg);
+  margin-right: 5px;
+}
+.contacts__item a {
+  color: var(--light-green);
+  font-size: 14px;
 }
 
 .footer-links {
